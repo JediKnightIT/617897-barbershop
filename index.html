@@ -84,10 +84,18 @@
         <p class="entry__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
         <!-- Правильность резметки формы проверю после лекции Вадима Макеева -->
         <form class="form" action="#" method="post">
-          <label class="form__label" for="#"><input class="form__input" type="text"></label>
-          <label class="form__label" for="#"><input class="form__input" type="text"></label>
-          <label class="form__label" for="#"><input class="form__input" type="text"></label>
-          <label class="form__label" for="#"><input class="form__input" type="tel"></label>
+          <label class="form__label" for="date">Дата
+            <input class="form__input" id="date" type="text">
+          </label>
+          <label class="form__label" for="time">Время
+            <input class="form__input" id="time" type="text">
+          </label>
+          <label class="form__label" for="name">Ваше имя
+            <input class="form__input" id="name" type="text">
+          </label>
+          <label class="form__label" for="telephon">Телефон
+            <input class="form__input" id="telephon" type="tel">
+          </label>
         </form>
       </section>
     </main>
@@ -111,5 +119,11 @@
         <a class="button" href="#">Html Academy</a>
       </div>
     </footer>
+    <section class="modal authorization">
+      <h2 class="authorization__title">Личный кабинет</h2>
+      <p class="authorization__text">Введите свой логин и пароль.</p>
+      <form action="#" method="post"></form>
+      <span class="modal__close"></span>
+    </section>
   </body>
 </html>
