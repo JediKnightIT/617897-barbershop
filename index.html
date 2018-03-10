@@ -27,8 +27,12 @@
             <a class="nav__link" href="#">Контакты</a>
           </li>
         </ul>
+        <ul class="nav-user">
+          <li class="nav-user__item">
+            <a class="nav-user__link" href="#">Вход</a>
+          </li>
+        </ul>
       </nav>
-      <button class="btn-entrance" id="btn-entrance" type="button">Вход</button>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Барбершоп Бородинский</h1>
@@ -70,8 +74,8 @@
             <img class="photo-gallery__img" src="#" alt="Интерьер">
           </a>
         </figure>
-        <button class="button button_back">Назад</button>
-        <button class="button button_next">Вперед</button>
+        <button class="button button_back" type="button">Назад</button>
+        <button class="button button_next" type="button">Вперед</button>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контактная информация</h2>
@@ -94,16 +98,16 @@
         <p class="entry__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="form__label">Дата
-            <input class="form__input" id="date" type="date" required> <!-- Данные типы инпутов поддерживаются не во всех браузерах -->
+            <input class="form__input" id="form-date" type="text" name="date" placeholder="08.10.2018" required>
           </label>
           <label class="form__label">Время
-            <input class="form__input" id="time" type="time" value="10:00" required> <!-- Данные типы инпутов поддерживаются не во всех браузерах -->
+            <input class="form__input" id="form-time" type="text" name="time" placeholder="10:00" required>
           </label>
           <label class="form__label">Ваше имя
-            <input class="form__input" id="name" type="text" placeholder="Борода" required>
+            <input class="form__input" id="form-name" type="text" name="name" placeholder="Борода">
           </label>
-          <label class="form__label" for="telephon" >Телефон
-            <input class="form__input" id="telephon" type="tel" placeholder="+7 123 456-78-90" required>
+          <label class="form__label">Телефон
+            <input class="form__input" id="form-telephon" type="tel" name="telephon" placeholder="+7 123 456-78-90" required>
           </label>
           <button class="button button_form" type="submit">Отправить</button>
         </form>
@@ -138,13 +142,29 @@
     <section class="modal authorization">
       <h2 class="authorization__title">Личный кабинет</h2>
       <p class="authorization__text">Введите свой логин и пароль.</p>
-      <form action="https://echo.htmlacademy.ru" method="POST"></form>
-      <span class="modal__close"></span>
+      <form class="authorization__form" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="visually-hidden">Логин
+          <input class="authorization__form-input authorization__form-input_user-icon" type="text" name="user-login" placeholder="Логин" required>
+        </label>
+        <label class="visually-hidden">Пароль
+          <input class="authorization__form-input authorization__form-input_password-icon" type="password" name="user-password" placeholder="Пароль" required>
+        </label>
+        <p class="authorization__form-row">
+          <label class="authorization__form-label">
+            <input class="visually-hidden" type="checkbox" name="remember" checked>
+            Запомните меня
+            <span class="authorization__form-checkbox"></span>
+          </label>
+          <a class="authorization__form-link" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button button_authorization" type="submit">Войти</button>
+      </form>
+      <button class="modal__close" type="button">Закрыть</button>
     </section>
     <section class="modal map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img class="map__img" src="#" alt="Санкт-Петербург, Большая Конюшенная ул., 19">
-      <span class="modal__close"></span>
+      <img class="map__img" src="#" alt="Офис барбершопа Бородинский г.Санкт-Петербург, Большая Конюшенная ул., д.19">
+      <button class="modal__close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
