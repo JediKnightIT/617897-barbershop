@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Барбершоп Бородинский</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
+          <img class="nav__logo" src="#" alt="Логотип барбершопа Бородинский">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Информация</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Прайс-лист</a>
+          </li>
+          <li class="nav__item nav__item_active">
+            <a class="nav__link" href="#">Магазин</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="nav-user">
+          <li class="nav-user__item">
+            <a class="nav-user__link" href="#">Вход</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+
+    </main>
+    <footer class="footer">
+      <p class="footer__text">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a class="footer__link" href="#">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="socials">
+        <p class="socials__text">Давайте дружить!</p>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#">Вконтакте</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Фейсбук</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__textt">Разработано:</p>
+        <a class="button" href="#">Html Academy</a>
+      </div>
+    </footer>
+    <section class="modal authorization">
+      <h2 class="authorization__title">Личный кабинет</h2>
+      <p class="authorization__text">Введите свой логин и пароль.</p>
+      <form class="authorization__form" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="visually-hidden">Логин
+          <input class="authorization__form-input authorization__form-input_user-icon" type="text" name="user-login" placeholder="Логин" required>
+        </label>
+        <label class="visually-hidden">Пароль
+          <input class="authorization__form-input authorization__form-input_password-icon" type="password" name="user-password" placeholder="Пароль" required>
+        </label>
+        <p class="authorization__form-row">
+          <label class="authorization__form-label">
+            <input class="visually-hidden" type="checkbox" name="remember" checked>
+            Запомните меня
+            <span class="authorization__form-checkbox"></span>
+          </label>
+          <a class="authorization__form-link" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button button_authorization" type="submit">Войти</button>
+      </form>
+      <button class="modal__close" type="button">Закрыть</button>
+    </section>
+    <section class="modal map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img class="map__img" src="#" alt="Офис барбершопа Бородинский г.Санкт-Петербург, Большая Конюшенная ул., д.19">
+      <button class="modal__close" type="button">Закрыть</button>
+    </section>
+  </body>
+</html>
