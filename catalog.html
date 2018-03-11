@@ -96,8 +96,28 @@
           </fieldset>
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">Группы товаров:</legend>
-
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input class="visually-hidden" type="radio" name="product-group" value="shaving">
+                  Бритвенные принадлежности
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input class="visually-hidden" type="radio" name="product-group" value="care-products">
+                  Средства для ухода
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input class="visually-hidden" type="radio" name="product-group" value="accessories">
+                  Аксессуары
+                </label>
+              </li>
+            </ul>
           </fieldset>
+          <button class="button button_filter" type="submit">Показать</button>
         </form>
       </section>
       <section class="product">
