@@ -67,3 +67,64 @@ img {
 .nav-user__link:focus {
   background-color: #242424;
 }
+
+/* ===== Стилизация основного контента главной страницы ===== */
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.main__container {
+color: #000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/index/container-bcg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.news__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news__list {
+  list-style: none;
+}
+
+.news__time {
+  text-transform: none;
+}
+
+.button {
+  border: none;
+
+  font: inherit;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus
+.button:active {
+  background-color: #663d15;
+}
+
+.photo-gallery__list {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
