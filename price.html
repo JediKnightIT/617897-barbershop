@@ -8,10 +8,10 @@
   </head>
   <body>
     <header class="header">
+      <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
+        <img class="nav__logo" src="img/logo/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+      </a>
       <nav class="nav">
-        <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
-          <img class="nav__logo" src="img/logo/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
-        </a>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#">Информация</a>
@@ -19,11 +19,11 @@
           <li class="nav__item">
             <a class="nav__link" href="#">Новости</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="price.html">Прайс-лист</a>
-          </li>
           <li class="nav__item nav__item_active">
-            <a class="nav__link" href="#">Магазин</a>
+            <a class="nav__link" href="#">Прайс-лист</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Магазин</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Контакты</a>
@@ -37,53 +37,44 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="main__title">Набор для путешествий «Baxter of California»</h1>
+      <h1 class="main__title">Прайс-лист</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="catalog.html">Магазин</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Средства для ухода</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item_active">Набор для путешествий «Baxter of California»</li>
+        <li class="breadcrumbs__item breadcrumbs__item_active">Прайс-лист</li>
       </ul>
-      <section class="product-photo">
-        <h2 class="visually-hidden">Изображения товара</h2>
-        <p class="product-photo__content-photo">
-          <img class="product-photo__main-photo" src="img/catalog-item/product-basic.jpg" width="460" height="498" alt="Изображения товара ракурс 3">
-        </p>
-        <ul class="product-photo__list">
-          <li class="product-photo__item">
-            <img class="product-photo__img" src="img/catalog-item/small-1.jpg" width="140" height="149" alt="Изображения товара ракурс 1">
-          </li>
-          <li class="product-photo__item">
-            <img class="product-photo__img" src="img/catalog-item/small-2.jpg" width="140" height="149" alt="Изображения товара ракурс 2">
-          </li>
-          <li class="product-photo__item">
-            <img class="product-photo__img" src="img/catalog-item/small-3.jpg" width="140" height="149" alt="Изображения товара ракурс 3">
-          </li>
+      <!-- Для заполнения контента из админки классы не ставим, а стилизуем за каскадом -->
+      <section class="about">
+        <h2>Истинно мужская классика</h2>
+
+        <h2>Мы импользуем только лучшие средства:</h2>
+        <ul>
+          <li>Baxter of California</li>
+          <li>Mr Natty</li>
+          <li>Suavecito</li>
+          <li>Malin+Goetz</li>
         </ul>
-      </section>
-      <section class="product-info">
-        <h2 class="visually-hidden">Информация о товаре</h2>
-        <p class="product-info__availability">Есть в наличии</p>
-        <p class="product-info__code">Артикул: dexter-ae</p>
-        <p class="product-info__description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        <p class="product__buy">
-          <span class="product__price">2 900 &#8381;</span>
-          <a class="btn" href="#">Купить</a>
-        </p>
-        <h3 class="product-info__composition">В набор входят:</h3>
-        <ul class="product-info__list">
-          <li class="product-info__item">Средство для умывания (50 мл)</li>
-          <li class="product-info__item">Увлажняющий крем (50 мл)</li>
-          <li class="product-info__item">Крем для бритья (50 мл)</li>
-          <li class="product-info__item">Крем после бритья, шампунь (50 мл)</li>
-          <li class="product-info__item">Удобная кожаная косметичка</li>
-        </ul>
+
+        <h2>Цены на услуги наших мастеров:</h2>
+        <table>
+          <tr>
+            <td>Стрижка</td>
+            <td>1500 &#8381;</td>
+          </tr>
+          <tr>
+            <td>Стрижка бороды</td>
+            <td>500 &#8381;</td>
+          </tr>
+          <tr>
+            <td>Накрутка усов</td>
+            <td>350 &#8381;</td>
+          </tr>
+        </table>
+
+        <h2>Несколько слов о нас:</h2>
+        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
       </section>
     </main>
     <footer class="footer">
