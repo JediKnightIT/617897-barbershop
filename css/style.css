@@ -1,4 +1,4 @@
-/* ===== Глобальные стили */
+/* ===== Глобальные стили ===== */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -21,14 +21,18 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 21px;
-  color: #000;
+  line-height: 24px;
+  color: #fff;
   text-transform: uppercase;
 
-  background-color: #f2f2f2;
+  background-color: #000;
+  background-image: url("../img/index/main-bcg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -39,13 +43,27 @@ img {
   max-width: 100%;
 }
 
-.wrapper {
-  position: relative;
+/* ===== Стилизация хэдера ===== */
+.header {
+  font-size: 16px;
+  line-height: 20px;
 
-  min-width: 768px;
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: #000;
+}
 
-  -webkit-box-shadow: 0 0 10px 3px #c5c1c2;
-          box-shadow: 0 0 10px 3px #c5c1c2;
+.nav__list,
+.nav-user {
+  list-style: none;
+}
+
+.nav__link,
+.nav-user__link {
+  color: #fff;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav-user__link:hover,
+.nav-user__link:focus {
+  background-color: #242424;
 }
