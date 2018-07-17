@@ -124,7 +124,34 @@ color: #000;
   background-color: #663d15;
 }
 
+.photo-gallery__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
 .photo-gallery__list {
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.contacts__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.entry__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.form__input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.form__input:focus {
+  border-color: #663d15;
+  outline: none;
 }
