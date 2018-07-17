@@ -82,41 +82,43 @@
           <button class="button button_next" type="button">Вперед</button>
         </section>
       </div>
-      <section class="contacts">
-        <h2 class="contacts__title">Контактная информация</h2>
-        <!-- Не ругайтесь на <br>! Смотрите спецификацию HTML5.2 раздел 4.5.29. br elements must be used only for line breaks that are actually part of the content, as in poems or addresses.  -->
-        <p class="contacts__info">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          Телефон: +7 (812) 666-02-66
-        </p>
-        <p class="contacts__worktime">
-          Время работы:<br>
-          пн—пт: с 10:00 до 22:00<br>
-          сб—вс: с 10:00 до 19:00
-        </p>
-        <a class="button" id="map" href="#">Как проехать</a>
-        <a class="button" id="feedback" href="#">Обратная связь</a>
-      </section>
-      <section class="entry">
-        <h2 class="entry__title">Записаться</h2>
-        <p class="entry__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="form__label">Дата
-            <input class="form__input" id="form-date" type="text" name="date" placeholder="08.10.2018" required>
-          </label>
-          <label class="form__label">Время
-            <input class="form__input" id="form-time" type="text" name="time" placeholder="10:00" required>
-          </label>
-          <label class="form__label">Ваше имя
-            <input class="form__input" id="form-name" type="text" name="name" placeholder="Борода">
-          </label>
-          <label class="form__label">Телефон
-            <input class="form__input" id="form-telephon" type="tel" name="telephon" placeholder="+7 123 456-78-90" required>
-          </label>
-          <button class="button button_form" type="submit">Отправить</button>
-        </form>
-      </section>
+      <div class="main__container">
+        <section class="contacts">
+          <h2 class="contacts__title">Контактная информация</h2>
+          <!-- Не ругайтесь на <br>! Смотрите спецификацию HTML5.2 раздел 4.5.29. br elements must be used only for line breaks that are actually part of the content, as in poems or addresses.  -->
+          <p class="contacts__info">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            Телефон: +7 (812) 666-02-66
+          </p>
+          <p class="contacts__worktime">
+            Время работы:<br>
+            пн—пт: с 10:00 до 22:00<br>
+            сб—вс: с 10:00 до 19:00
+          </p>
+          <a class="button" id="map" href="#">Как проехать</a>
+          <a class="button" id="feedback" href="#">Обратная связь</a>
+        </section>
+        <section class="entry">
+          <h2 class="entry__title">Записаться</h2>
+          <p class="entry__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="form__label">Дата
+              <input class="form__input" id="form-date" type="text" name="date" placeholder="08.10.2018" required>
+            </label>
+            <label class="form__label">Время
+              <input class="form__input" id="form-time" type="text" name="time" placeholder="10:00" required>
+            </label>
+            <label class="form__label">Ваше имя
+              <input class="form__input" id="form-name" type="text" name="name" placeholder="Борода">
+            </label>
+            <label class="form__label">Телефон
+              <input class="form__input" id="form-telephon" type="tel" name="telephon" placeholder="+7 123 456-78-90" required>
+            </label>
+            <button class="button button_form" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer__text">
