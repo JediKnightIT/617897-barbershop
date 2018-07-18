@@ -155,3 +155,28 @@ color: #000;
   border-color: #663d15;
   outline: none;
 }
+
+/* ===== Стилизация футера ===== */
+.footer {
+  background-color: #242424;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  text-decoration: none;
+}
+
+.socials__list {
+  list-style: none;
+}
+
+.footer__copyright-link:hover,
+.footer__copyright-link:focus {
+  color: #000000;
+  background-color: #ffffff
+}
