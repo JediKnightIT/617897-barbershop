@@ -100,33 +100,45 @@
         <p class="socials__text">Давайте дружить!</p>
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link" href="#">Вконтакте</a>
+            <a class="socials__link" href="#" aria-label="Вконтакте">
+              <svg class="social__icon" width="28" height="15">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">Фейсбук</a>
+            <a class="socials__link" href="#" aria-label="Фейсбук">
+              <svg class="social__icon" width="12" height="22">
+                <use xlink:href="img/sprite.svg#facebook">></use>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">Инстаграм</a>
+            <a class="socials__link" href="#" aria-label="Инстаграм">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="footer__copyright">
         <p class="footer__textt">Разработано:</p>
-        <a class="button" href="#">Html Academy</a>
+        <a class="button footer__copyright-link" href="#">Html Academy</a>
       </div>
     </footer>
     <section class="modal authorization">
       <h2 class="authorization__title">Личный кабинет</h2>
       <p class="authorization__text">Введите свой логин и пароль.</p>
       <form class="authorization__form" action="https://echo.htmlacademy.ru" method="POST">
-        <label class="visually-hidden">Логин
+        <label class="authorization__label">Логин
           <input class="authorization__form-input authorization__form-input_user-icon" type="text" name="user-login" placeholder="Логин" required>
         </label>
-        <label class="visually-hidden">Пароль
+        <label class="authorization__label">Пароль
           <input class="authorization__form-input authorization__form-input_password-icon" type="password" name="user-password" placeholder="Пароль" required>
         </label>
         <p class="authorization__form-row">
-          <label class="authorization__form-label">
+          <label class="authorization__label">
             <input class="visually-hidden" type="checkbox" name="remember" checked>
             Запомните меня
             <span class="authorization__form-checkbox"></span>
