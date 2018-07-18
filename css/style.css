@@ -83,7 +83,7 @@ img {
 }
 
 .main__container {
-color: #000;
+  color: #000;
 
   background-color: #f8f5f2;
   background-image: url("../img/index/container-bcg.jpg");
@@ -178,5 +178,42 @@ color: #000;
 .footer__copyright-link:hover,
 .footer__copyright-link:focus {
   color: #000000;
+
   background-color: #ffffff
+}
+
+/* ===== Стилизация модальных окон ===== */
+.authorization {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/index/container-bcg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.authorization__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.authorization__form-input {
+  font: inherit;
+
+  border: 2px solid #000000;
+}
+
+.authorization__form-input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+.authorization__form-link {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.authorization__form-link:hover,
+.authorization__form-link:focus {
+  text-decoration: none;
 }
