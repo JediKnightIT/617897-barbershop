@@ -179,8 +179,43 @@ img {
   color: #000;
 }
 
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
+  text-decoration: underline;
+}
+
 .breadcrumbs__item_active {
   color: #aba9a7;
+}
+
+.filter__fieldset {
+  border: none;
+}
+
+.filter__legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter__list {
+  list-style: none;
+}
+
+.filter__label {
+  line-height: 18px;
+}
+
+.filter__label:hover,
+.filter__label:focus {
+  color: #663d15;
+}
+
+.filter__input:disabled + .filter__label {
+  color: #aba9a7;
+}
+
+.filter__button {
+  line-height: 18px;
 }
 
 /* ===== Стилизация футера ===== */
