@@ -60,40 +60,28 @@
             <legend class="filter__legend">Производители:</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="baxter-of-california" checked>
-                  Baxter of California
-                </label>
+                <input class="visually-hidden filter__input" type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
+                <label class="filter__label" for="baxter-of-california">Baxter of California</label>
               </li>
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="mr-natty" >
-                  Mr Natty
-                </label>
+                <input class="visually-hidden filter__input" type="checkbox" name="mr-natty" id="mr-natty">
+                <label class="filter__label" for="mr-natty">Mr Natty</label>
               </li>
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="suavecito" checked>
-                  Suavecito
-                </label>
+                <input class="visually-hidden filter__input" type="checkbox" name="suavecito" id="suavecito"checked>
+                <label class="filter__label" for="suavecito">Suavecito</label>
               </li>
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="malin-goetz" >
-                  Malin+Goetz
-                </label>
+                <input class="visually-hidden filter__input" type="checkbox" name="malin-goetz" id="malin-goetz">
+                <label class="filter__label" for="malin-goetz">Malin+Goetz</label>
               </li>
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="murrays" >
-                  Murray’s
-                </label>
+                <input class="visually-hidden filter__input" type="checkbox" name="murrays" id="murrays">
+                <label class="filter__label" for="murrays">Murray’s</label>
               </li>
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="checkbox" name="american-crew" checked>
-                  American Crew
-                </label>
+                <input class="visually-hidden filter__input" type="checkbox" name="american-crew" id="american-crew" checked>
+                <label class="filter__label" for="american-crew">American Crew</label>
               </li>
             </ul>
           </fieldset>
@@ -101,26 +89,20 @@
             <legend class="filter__legend">Группы товаров:</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="radio" name="product-group" value="shaving">
-                  Бритвенные принадлежности
-                </label>
+                <input class="visually-hidden filter__input" type="radio" name="product-group" id="filter-shaving" value="shaving">
+                <label class="filter__label" for="filter-shaving">Бритвенные принадлежности</label>
               </li>
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="radio" name="product-group" value="care-products">
-                  Средства для ухода
-                </label>
+                <input class="visually-hidden filter__input" type="radio" name="product-group" id="filter-care" value="care-products">
+                <label class="filter__label" for="filter-care">Средства для ухода</label>
               </li>
               <li class="filter__item">
-                <label class="filter__label">
-                  <input class="visually-hidden" type="radio" name="product-group" value="accessories">
-                  Аксессуары
-                </label>
+                <input class="visually-hidden filter__input" type="radio" name="product-group" id="filter-accessories" value="accessories">
+                <label class="filter__label" for="filter-accessories">Аксессуары</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button button_filter" type="submit">Показать</button>
+          <button class="button filter__button" type="submit">Показать</button>
         </form>
       </section>
       <section class="product">
@@ -136,7 +118,7 @@
             </a>
             <p class="product__buy">
               <span class="product__price">2 900 &#8381;</span>
-              <a class="btn" href="#">Купить</a>
+              <a class="product__buy-link" href="#">Купить</a>
             </p>
           </li>
           <li class="product__item">
@@ -149,7 +131,7 @@
             </a>
             <p class="product__buy">
               <span class="product__price">750 &#8381;</span>
-              <a class="btn" href="#">Купить</a>
+              <a class="product__buy-link" href="#">Купить</a>
             </p>
           </li>
           <li class="product__item">
@@ -162,7 +144,7 @@
             </a>
             <p class="product__buy">
               <span class="product__price">290 &#8381;</span>
-              <a class="btn" href="#">Купить</a>
+              <a class="product__buy-link" href="#">Купить</a>
             </p>
           </li>
           <li class="product__item">
@@ -175,7 +157,7 @@
             </a>
             <p class="product__buy">
               <span class="product__price">500 &#8381;</span>
-              <a class="btn" href="#">Купить</a>
+              <a class="product__buy-link" href="#">Купить</a>
             </p>
           </li>
           <li class="product__item">
@@ -188,7 +170,7 @@
             </a>
             <p class="product__buy">
               <span class="product__price">300 &#8381;</span>
-              <a class="btn" href="#">Купить</a>
+              <a class="product__buy-link" href="#">Купить</a>
             </p>
           </li>
           <li class="product__item">
@@ -201,7 +183,7 @@
             </a>
             <p class="product__buy">
               <span class="product__price">3 900 &#8381;</span>
-              <a class="btn" href="#">Купить</a>
+              <a class="product__buy-link" href="#">Купить</a>
             </p>
           </li>
         </ul>
