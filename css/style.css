@@ -130,8 +130,8 @@ img {
 }
 
 .photo-gallery__list {
-  background-color: #cccccc;
-  border: 7px solid #ffffff;
+  background-color: #ccc;
+  border: 7px solid #fff;
 }
 
 .contacts__title {
@@ -148,12 +148,39 @@ img {
   font: inherit;
 
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #000;
 }
 
 .form__input:focus {
   border-color: #663d15;
   outline: none;
+}
+
+/* ===== Стилизация основного контента страницы catalog ===== */
+.catalog {
+  color: #000000;
+
+  background-color: #fff;
+  background-image: url("../img/index/container-bcg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.catalog__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs__link {
+  color: #000;
+}
+
+.breadcrumbs__item_active {
+  color: #aba9a7;
 }
 
 /* ===== Стилизация футера ===== */
@@ -162,7 +189,7 @@ img {
 }
 
 .footer__link {
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -177,14 +204,14 @@ img {
 
 .footer__copyright-link:hover,
 .footer__copyright-link:focus {
-  color: #000000;
+  color: #000;
 
-  background-color: #ffffff
+  background-color: #fff;
 }
 
 /* ===== Стилизация модальных окон ===== */
 .authorization {
-  color: #000000;
+  color: #000;
 
   background-color: #f8f5f2;
   background-image: url("../img/index/container-bcg.jpg");
@@ -200,7 +227,7 @@ img {
 .authorization__form-input {
   font: inherit;
 
-  border: 2px solid #000000;
+  border: 2px solid #000;
 }
 
 .authorization__form-input:focus {
@@ -209,7 +236,7 @@ img {
 }
 
 .authorization__form-link {
-  color: #000000;
+  color: #000;
   text-decoration: underline;
 }
 
