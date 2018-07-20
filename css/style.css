@@ -218,6 +218,37 @@ img {
   line-height: 18px;
 }
 
+.product__list {
+  list-style: none;
+}
+
+.product__link {
+  color: #000;
+}
+
+.product__title {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.product__group {
+  text-transform: none;
+}
+
+.product__buy {
+  line-height: 18px;
+}
+
+.product__price {
+  background-color: #e5e5e5;
+}
+
+.product__buy-link {
+  color: #fff;
+
+  background-color: #000;
+}
+
 /* ===== Стилизация футера ===== */
 .footer {
   background-color: #242424;
