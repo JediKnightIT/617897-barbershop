@@ -277,6 +277,25 @@ img {
   background-color: #fff;
 }
 
+/* ===== Стилизация карточки товара ===== */
+.main__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.product-photo__list {
+  list-style: none;
+}
+
+.product-info__code {
+color: #aeaeae;
+}
+
+.product-info__composition {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 /* ===== Стилизация футера ===== */
 .footer {
   background-color: #242424;
