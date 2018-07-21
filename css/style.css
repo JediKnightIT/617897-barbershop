@@ -255,14 +255,26 @@ img {
 
 .pagination__link {
   color: #fff;
-}
 
-.pagination__item {
   background-color: #000;
 }
-.pagination__item:hover,
-.pagination__item:focus {
+
+.pagination__link:hover,
+.pagination__link:focus {
   background-color: #663d15;
+}
+
+.pagination__link_active {
+  color: #000;
+
+  background-color: #fff;
+}
+
+.pagination__link_active:hover,
+.pagination__link_active:focus {
+  color: #000;
+
+  background-color: #fff;
 }
 
 /* ===== Стилизация футера ===== */
