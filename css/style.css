@@ -43,6 +43,16 @@ img {
   max-width: 100%;
 }
 
+.inner-page {
+  background-color: #f8f5f2;
+  background-image:
+    linear-gradient(to bottom, black, transparent),
+    url("../img/index/container-bcg.jpg");
+  background-size: 10px 40px, auto;
+  background-position: 0 0;
+  background-repeat: repeat-x, repeat;
+}
+
 /* ===== Стилизация хэдера ===== */
 .header {
   font-size: 16px;
@@ -80,6 +90,10 @@ img {
 .advantages__title {
   font-size: 30px;
   line-height: 42px;
+}
+
+.main {
+  color: #000;
 }
 
 .main__container {
@@ -157,15 +171,6 @@ img {
 }
 
 /* ===== Стилизация основного контента страницы catalog ===== */
-.catalog {
-  color: #000000;
-
-  background-color: #fff;
-  background-image: url("../img/index/container-bcg.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
 .catalog__title {
   font-size: 30px;
   line-height: 42px;
@@ -294,6 +299,25 @@ color: #aeaeae;
 .product-info__composition {
   font-size: 24px;
   line-height: 30px;
+}
+
+/* ===== Стилизация страницы price ===== */
+.about h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about .about__title {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.about table {
+  border-collapse: collapse;
+}
+
+.about td {
+  border: 2px solid #000;
 }
 
 /* ===== Стилизация футера ===== */
