@@ -87,7 +87,7 @@ img {
   text-align: center;
 }
 
-.advantages__title {
+.common-title {
   font-size: 30px;
   line-height: 42px;
 }
@@ -103,11 +103,6 @@ img {
   background-image: url("../img/index/container-bcg.jpg");
   background-position: 0 0;
   background-repeat: repeat;
-}
-
-.news__title {
-  font-size: 30px;
-  line-height: 42px;
 }
 
 .news__list {
@@ -138,24 +133,9 @@ img {
   background-color: #663d15;
 }
 
-.photo-gallery__title {
-  font-size: 30px;
-  line-height: 42px;
-}
-
 .photo-gallery__list {
   background-color: #ccc;
   border: 7px solid #fff;
-}
-
-.contacts__title {
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.entry__title {
-  font-size: 30px;
-  line-height: 42px;
 }
 
 .form__input {
@@ -171,11 +151,6 @@ img {
 }
 
 /* ===== Стилизация основного контента страницы catalog ===== */
-.catalog__title {
-  font-size: 30px;
-  line-height: 42px;
-}
-
 .breadcrumbs {
   list-style: none;
 }
@@ -283,11 +258,6 @@ img {
 }
 
 /* ===== Стилизация карточки товара ===== */
-.main__title {
-  font-size: 30px;
-  line-height: 42px;
-}
-
 .product-photo__list {
   list-style: none;
 }
@@ -354,11 +324,6 @@ color: #aeaeae;
   background-image: url("../img/index/container-bcg.jpg");
   background-position: 0 0;
   background-repeat: repeat;
-}
-
-.authorization__title {
-  font-size: 30px;
-  line-height: 42px;
 }
 
 .authorization__form-input {
