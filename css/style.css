@@ -46,7 +46,7 @@ img {
 .inner-page {
   background-color: #f8f5f2;
   background-image:
-    linear-gradient(to bottom, black, transparent),
+    linear-gradient(to bottom, #000, transparent),
     url("../img/index/container-bcg.jpg");
   background-size: 10px 40px, auto;
   background-position: 0 0;
