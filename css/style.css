@@ -32,7 +32,7 @@ body {
   background-image: url("../img/index/main-bcg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top center;
 }
 
 a {
@@ -61,6 +61,8 @@ img {
 
 /* ===== Стилизация хэдера ===== */
 .header {
+  margin-bottom: 40px;
+
   font-size: 16px;
   line-height: 20px;
 }
@@ -115,17 +117,38 @@ img {
 }
 
 /* ===== Стилизация основного контента главной страницы ===== */
+.advantages {
+  margin-bottom: 80px;
+}
+
 .advantages__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+
   list-style: none;
 }
 
 .advantages__item {
+  flex-basis: 300px;
+
   text-align: center;
 }
 
 .common-title {
   font-size: 30px;
   line-height: 42px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.advantages__text {
+  margin: 0;
 }
 
 .main {
