@@ -238,6 +238,25 @@ img {
   border: 7px solid #fff;
 }
 
+.contacts {
+  flex-basis: 380px;
+  margin-right: auto;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__info {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts__worktime {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .form__input {
   font: inherit;
 
