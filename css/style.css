@@ -138,6 +138,8 @@ img {
 }
 
 .common-title {
+  margin: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
@@ -156,6 +158,10 @@ img {
 }
 
 .main__container {
+  display: flex;
+  margin-bottom: 35px;
+  padding: 50px 80px;
+
   color: #000;
 
   background-color: #f8f5f2;
@@ -164,8 +170,32 @@ img {
   background-repeat: repeat;
 }
 
+.news {
+  flex-basis: 380px;
+  margin-right: auto;
+}
+
+.news__title {
+  margin-bottom: 13px;
+}
+
 .news__list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
   list-style: none;
+}
+
+.news__item {
+  margin-bottom: 20px;
+}
+
+.news__item:last-child {
+  margin-bottom: 0;
+}
+.news__text {
+  margin: 0;
 }
 
 .news__time {
@@ -192,7 +222,18 @@ img {
   background-color: #663d15;
 }
 
+.photo-gallery {
+  flex-basis: 300px;
+}
+
+.photo-gallery__title {
+  margin-bottom: 15px;
+}
+
 .photo-gallery__list {
+  margin: 0;
+  margin-bottom: 30px;
+
   background-color: #ccc;
   border: 7px solid #fff;
 }
