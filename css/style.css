@@ -170,6 +170,10 @@ img {
   background-repeat: repeat;
 }
 
+.main__container:last-child {
+  margin-bottom: 65px;
+}
+
 .news {
   flex-basis: 380px;
   margin-right: auto;
@@ -257,7 +261,42 @@ img {
   margin-bottom: 25px;
 }
 
+.entry {
+  flex-basis: 300px;
+}
+
+.entry__title {
+  margin-bottom: 20px;
+}
+
+.entry__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form__item {
+  flex-basis: 140px;
+}
+
+.form__label {
+  padding-left: 15px;
+}
+
 .form__input {
+  width: 100%;
+  box-sizing: border-box;
+
   font: inherit;
 
   background-color: transparent;
