@@ -15,28 +15,32 @@
         <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
           <img class="header__logo" src="img/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Информация</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Новости</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="price.html">Прайс-лист</a>
-          </li>
-          <li class="nav__item nav__item_active">
-            <a class="nav__link" href="#">Магазин</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="nav-user">
-          <li class="nav-user__item">
-            <a class="nav-user__link" href="#">Вход</a>
-          </li>
-        </ul>
+        <div class="nav__wrapper">
+          <div class="container">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Информация</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Новости</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="price.html">Прайс-лист</a>
+              </li>
+              <li class="nav__item nav__item_active">
+                <a class="nav__link" href="#">Магазин</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="nav-user">
+              <li class="nav-user__item">
+                <a class="nav-user__link" href="#">Вход</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="main">
@@ -204,41 +208,45 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a class="footer__link" href="#">Как нас найти?</a><br>
-        Телефон: +7 (812) 666-02-66
-      </p>
-      <div class="socials">
-        <p class="socials__text">Давайте дружить!</p>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Вконтакте">
-              <svg class="social__icon" width="28" height="15">
-                <use xlink:href="img/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Фейсбук">
-              <svg class="social__icon" width="12" height="22">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Инстаграм">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <p class="footer__textt">Разработано:</p>
-        <a class="button footer__copyright-link" href="#">Html Academy</a>
+      <div class="container">
+        <div class="footer__wrapper">
+          <p class="address footer__text">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <a class="footer__link" href="#">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+          </p>
+          <div class="socials">
+            <p class="socials__text">Давайте дружить!</p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Вконтакте">
+                  <svg class="social__icon" width="28" height="15">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Фейсбук">
+                  <svg class="social__icon" width="12" height="22">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Инстаграм">
+                  <svg class="social__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p class="footer__text">Разработано:</p>
+            <a class="button copyright__link" href="#">Html Academy</a>
+          </div>
+        </div>
       </div>
     </footer>
     <section class="modal authorization">
