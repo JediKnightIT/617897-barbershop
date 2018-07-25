@@ -59,7 +59,7 @@ img {
   padding: 0 10px;
 }
 
-/* ===== Стилизация хэдера ===== */
+/* ===== Стилизация хэдера на главной странице===== */
 .header {
   margin-bottom: 40px;
 
@@ -114,6 +114,23 @@ img {
 .nav-user__link:hover,
 .nav-user__link:focus {
   background-color: #242424;
+}
+
+/* ===== Стилизация хэдера на внутренних страницах===== */
+.inner-page .header {
+  background-color: #000;
+}
+
+.inner-page .nav {
+  flex-direction: row;
+}
+
+.inner-page .nav__link-logo {
+  margin-right: 21px;
+}
+
+.inner-page .nav__list {
+  margin-right: auto;
 }
 
 /* ===== Стилизация основного контента главной страницы ===== */
