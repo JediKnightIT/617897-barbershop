@@ -326,8 +326,24 @@ img {
 }
 
 /* ===== Стилизация основного контента страницы catalog ===== */
+.catalog {
+  margin-bottom: 55px;
+}
+
+.catalog__title {
+  margin-bottom: 20px;
+}
+
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.breadcrumbs__item {
+  padding-right: 40px;
 }
 
 .breadcrumbs__link {
