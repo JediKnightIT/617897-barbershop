@@ -11,7 +11,7 @@
   </head>
   <body class="inner-page">
     <header class="header">
-      <nav class="nav">
+      <nav class="nav container">
         <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
           <img class="header__logo" src="img/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main class="main container">
       <h1 class="common-title">Набор для путешествий «Baxter of California»</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
@@ -90,41 +90,45 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a class="footer__link" href="#">Как нас найти?</a><br>
-        Телефон: +7 (812) 666-02-66
-      </p>
-      <div class="socials">
-        <p class="socials__text">Давайте дружить!</p>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Вконтакте">
-              <svg class="social__icon" width="28" height="15">
-                <use xlink:href="img/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Фейсбук">
-              <svg class="social__icon" width="12" height="22">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Инстаграм">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <p class="footer__textt">Разработано:</p>
-        <a class="button footer__copyright-link" href="#">Html Academy</a>
+      <div class="container">
+        <div class="footer__wrapper">
+          <p class="address footer__text">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <a class="footer__link" href="#">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+          </p>
+          <div class="socials">
+            <p class="socials__text">Давайте дружить!</p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Вконтакте">
+                  <svg class="social__icon" width="28" height="15">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Фейсбук">
+                  <svg class="social__icon" width="12" height="22">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Инстаграм">
+                  <svg class="social__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p class="footer__text">Разработано:</p>
+            <a class="button copyright__link" href="#">Html Academy</a>
+          </div>
+        </div>
       </div>
     </footer>
     <section class="modal authorization">
