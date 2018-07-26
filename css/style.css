@@ -465,10 +465,27 @@ img {
 }
 
 .pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+
   list-style: none;
 }
 
+.pagination__item {
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
 .pagination__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+
   color: #fff;
 
   background-color: #000;
