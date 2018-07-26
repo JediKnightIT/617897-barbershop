@@ -359,20 +359,41 @@ img {
   color: #aba9a7;
 }
 
+.catalog-wrapper {
+ display: flex;
+}
+
 .filter__fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
+.filter__fieldset--last {
+  margin-bottom: 45px;
+}
+
 .filter__legend {
+  margin-bottom: 30px;
+
   font-size: 24px;
   line-height: 30px;
 }
 
 .filter__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.filter__item {
+  margin-bottom: 15px;
+}
+
 .filter__label {
+  padding-left: 43px;
+
   line-height: 18px;
 }
 
