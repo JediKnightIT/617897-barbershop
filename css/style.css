@@ -41,6 +41,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .inner-page {
@@ -114,6 +115,29 @@ img {
 .nav-user__link:hover,
 .nav-user__link:focus {
   background-color: #242424;
+}
+
+.nav-user__item {
+  position: relative;
+}
+
+.nav-user__icon {
+  position: absolute;
+  top: 28px;
+  left: 25px;
+
+  fill: #fff;
+
+  opacity: 0.3;
+}
+
+.nav-user__item:hover .nav-user__icon,
+.nav-user__item:focus .nav-user__icon {
+  opacity: 1;
+}
+
+.nav-user__link {
+  padding-left: 50px;
 }
 
 /* ===== Стилизация хэдера на внутренних страницах===== */
