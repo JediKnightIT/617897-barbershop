@@ -538,6 +538,13 @@ color: #aeaeae;
   line-height: 30px;
 }
 
+.product-info__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 /* ===== Стилизация страницы price ===== */
 .about h2 {
   font-size: 24px;
