@@ -511,8 +511,22 @@ img {
 }
 
 /* ===== Стилизация карточки товара ===== */
+.product-photo {
+  flex-basis: 460px;
+}
+
 .product-photo__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.product-info {
+  flex-basis: 390px;
 }
 
 .product-info__code {
