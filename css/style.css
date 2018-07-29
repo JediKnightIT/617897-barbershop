@@ -268,8 +268,10 @@ img {
 
 .button {
   display: inline-block;
+  width: 140px;
   margin-right: 17px;
-  padding: 10px 34px;
+  padding: 10px 15px;
+  box-sizing: border-box;
 
   font: inherit;
   color: #fff;
@@ -328,7 +330,7 @@ img {
 }
 
 .contacts__title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contacts__info {
@@ -338,7 +340,7 @@ img {
 
 .contacts__worktime {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .entry {
