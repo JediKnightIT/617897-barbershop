@@ -41,7 +41,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .inner-page {
@@ -269,7 +268,7 @@ img {
 
 .button {
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 17px;
   padding: 10px 34px;
 
   font: inherit;
@@ -290,6 +289,13 @@ img {
   background-color: #663d15;
 }
 
+.button.disabled,
+.button:disabled {
+  background-color: #aba9a7;
+
+  cursor: default;
+}
+
 .photo-gallery {
   flex-basis: 300px;
 }
@@ -299,11 +305,21 @@ img {
 }
 
 .photo-gallery__list {
+  height: 164px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 
   background-color: #ccc;
   border: 7px solid #fff;
+}
+
+.button--next {
+  margin-right: 0;
+}
+
+.button--back,
+.button--next {
+  width: 140px;
 }
 
 .contacts {
