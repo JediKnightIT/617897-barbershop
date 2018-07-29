@@ -348,12 +348,13 @@ img {
 }
 
 .entry__title {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .entry__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-bottom: 12px;
 }
 
 .form__list {
@@ -361,7 +362,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
 
   list-style: none;
@@ -369,14 +370,18 @@ img {
 
 .form__item {
   flex-basis: 140px;
+  margin-bottom: 8px;
 }
 
 .form__label {
-  padding-left: 15px;
+  display: block;
+  margin-bottom: 7px;
+  padding-left: 17px;
 }
 
 .form__input {
   width: 100%;
+  padding: 8px 15px;
   box-sizing: border-box;
 
   font: inherit;
@@ -388,6 +393,10 @@ img {
 .form__input:focus {
   border-color: #663d15;
   outline: none;
+}
+
+.button--form {
+  width: 100%;
 }
 
 /* ===== Стилизация основного контента страницы catalog ===== */
