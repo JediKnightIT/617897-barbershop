@@ -142,6 +142,7 @@ img {
 /* ===== Стилизация хэдера на внутренних страницах===== */
 .inner-page .header {
   background-color: #000;
+  margin-bottom: 50px;
 }
 
 .inner-page .nav {
@@ -149,7 +150,7 @@ img {
 }
 
 .inner-page .nav__link-logo {
-  margin-right: 21px;
+  margin: 0 20px;
 }
 
 .inner-page .nav__list {
@@ -406,7 +407,7 @@ img {
 }
 
 .catalog__title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .breadcrumbs {
@@ -422,6 +423,8 @@ img {
 }
 
 .breadcrumbs__link {
+  position: relative;
+
   color: #000;
 }
 
@@ -430,8 +433,23 @@ img {
   text-decoration: underline;
 }
 
-.breadcrumbs__item_active {
+.breadcrumbs__item--active {
   color: #aba9a7;
+}
+
+.breadcrumbs__link::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  right: -25px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+
+  transform: rotate(45deg);
 }
 
 .catalog-wrapper {
