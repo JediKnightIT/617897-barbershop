@@ -270,9 +270,8 @@ img {
 
 .button {
   display: inline-block;
-  width: 140px;
   margin-right: 17px;
-  padding: 10px 15px;
+  padding: 10px 30px;
   box-sizing: border-box;
 
   font: inherit;
@@ -317,13 +316,18 @@ img {
   border: 7px solid #fff;
 }
 
-.button--next {
-  margin-right: 0;
+.photo-gallery__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
-.button--back,
-.button--next {
+.photo-gallery__button {
   width: 140px;
+}
+
+.button--next {
+  margin-right: 0;
 }
 
 .contacts {
@@ -403,7 +407,7 @@ img {
 
 /* ===== Стилизация основного контента страницы catalog ===== */
 .catalog {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .catalog__title {
@@ -463,16 +467,13 @@ img {
 
 .filter__fieldset {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   border: none;
 }
 
-.filter__fieldset--last {
-  margin-bottom: 45px;
-}
-
 .filter__legend {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 24px;
   line-height: 30px;
@@ -486,7 +487,9 @@ img {
 }
 
 .filter__item {
-  margin-bottom: 15px;
+  position: relative;
+
+  margin-bottom: 13px;
   padding-left: 44px;
 }
 
@@ -497,14 +500,40 @@ img {
 .filter__label:hover,
 .filter__label:focus {
   color: #663d15;
+
+  cursor: pointer;
+}
+
+.filter__label--checkbox::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000;
+}
+
+.filter__input:checked + .filter__label--checkbox::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 3px;
+
+  width: 14px;
+  height: 14px;
+
+  background-image: url("../img/catalog/checked.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .filter__input:disabled + .filter__label {
   color: #aba9a7;
-}
-
-.filter__button {
-  line-height: 18px;
 }
 
 .product {
