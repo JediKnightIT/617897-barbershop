@@ -407,7 +407,7 @@ img {
 
 /* ===== Стилизация основного контента страницы catalog ===== */
 .catalog {
-  margin-bottom: 45px;
+  margin-bottom: 52px;
 }
 
 .catalog__title {
@@ -467,16 +467,15 @@ img {
 
 .filter__fieldset {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   padding: 0;
   border: none;
 }
 
 .filter__legend {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   font-size: 24px;
-  line-height: 30px;
 }
 
 .filter__list {
@@ -580,7 +579,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding: 0;
 
   list-style: none;
@@ -614,7 +613,7 @@ img {
   order: 1;
 
   margin: 0;
-  padding: 17px;
+  padding: 13px 17px;
 
   font-size: 14px;
   line-height: 18px;
@@ -642,7 +641,7 @@ img {
 
 .product__price {
   flex-basis: 110px;
-  padding: 10px 0;
+  padding: 12px 0;
 
   text-align: center;
 
@@ -658,7 +657,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   padding: 0;
 
   list-style: none;
@@ -761,7 +760,8 @@ color: #aeaeae;
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 60px 0;
+  padding-top: 55px;
+  padding-bottom: 38px;
 }
 
 .address {
@@ -771,7 +771,7 @@ color: #aeaeae;
 
 .footer__text {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   padding-right: 30px;
 }
 
@@ -793,7 +793,7 @@ color: #aeaeae;
 
 .socials__text {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .socials__list {
