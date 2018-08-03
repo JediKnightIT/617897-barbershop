@@ -575,6 +575,11 @@ img {
   flex-basis: 700px;
 }
 
+.product-photo__container {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
 .product__list {
   display: flex;
   flex-wrap: wrap;
