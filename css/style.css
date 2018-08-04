@@ -571,6 +571,8 @@ img {
 
 .filter__input:disabled + .filter__label {
   color: #aba9a7;
+
+  cursor: default;
 }
 
 .filter__input:disabled ~ .checkbox-indicator,
@@ -912,24 +914,85 @@ img {
 }
 
 /* ===== Стилизация модальных окон ===== */
+.modal {
+  position: fixed;
+  left: 50%;
+
+  width: 300px;
+  padding: 50px 80px;
+
+  transform: translateX(-50%);
+}
+
+.modal__title {
+  margin-bottom: 20px;
+}
+
 .authorization {
+  top: 120px;
+
   color: #000;
 
   background-color: #f8f5f2;
   background-image: url("../img/index/container-bcg.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+
+  box-shadow: 0px 0px 13px 5px #000;
+}
+
+.authorization__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.authorization__label {
+  position: relative;
+
+  display: block;
+  margin-bottom: 10px;
 }
 
 .authorization__form-input {
-  font: inherit;
+  width: 300px;
+  padding: 6px 20px;
+  padding-right: 40px;
 
+  box-sizing: border-box;
+
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #f8f5f2;
   border: 2px solid #000;
 }
 
 .authorization__form-input:focus {
   border-color: #663d15;
   outline: none;
+}
+
+.modal__icon {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+}
+
+.authorization__form-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.authorization__form-row {
+  position: relative;
+
+  margin: 0;
+}
+
+.modal__label {
+  padding-left: 30px;
 }
 
 .authorization__form-link {
@@ -940,4 +1003,42 @@ img {
 .authorization__form-link:hover,
 .authorization__form-link:focus {
   text-decoration: none;
+}
+
+.authorization__button {
+  width: 100%;
+  margin-right: 0;
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: -33px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -2px;
+
+  width: 23px;
+  height: 5px;
+
+  background-color: #663d15;
+
+  cursor: pointer;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
 }
