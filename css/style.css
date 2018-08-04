@@ -493,6 +493,17 @@ img {
   padding-left: 44px;
 }
 
+.checkbox-indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000;
+}
+
 .filter__label {
   line-height: 18px;
 }
@@ -504,40 +515,30 @@ img {
   cursor: pointer;
 }
 
-.filter__label--checkbox::before {
-  content: "";
-
-  position: absolute;
-  top: 2px;
-  left: 0;
-
-  width: 16px;
-  height: 16px;
-
-  border: 2px solid #000;
-}
-
+.filter__input:checked + .filter__label--checkbox::before,
 .filter__input:checked + .filter__label--checkbox::after {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 11px;
   left: 3px;
 
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 2px;
 
-  background-image: url("../img/catalog/checked.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.filter__input:checked + .filter__label--checkbox::before {
+  transform: rotate(45deg);
+}
+
+.filter__input:checked + .filter__label--checkbox::after {
+  transform: rotate(-45deg);
 }
 
 .filter__input:focus + .filter__label {
   color: #663d15;
-}
-
-.filter__input:disabled + .filter__label {
-  color: #aba9a7;
 }
 
 .filter__label--radio::before {
@@ -568,8 +569,19 @@ img {
   border-radius: 50%;
 }
 
-.filter__input:disabled + filter {
+.filter__input:disabled + .filter__label {
   color: #aba9a7;
+}
+
+.filter__input:disabled ~ .checkbox-indicator,
+.filter__input:disabled + .filter__label--radio::before {
+  border-color: #aba9a7;
+}
+
+.filter__input:disabled + .filter__label--checkbox::before,
+.filter__input:disabled + .filter__label--checkbox::after,
+.filter__input:disabled +.filter__label--radio::after {
+  background-color: #aba9a7;
 }
 
 .product {
@@ -685,14 +697,14 @@ img {
   background-color: #663d15;
 }
 
-.pagination__link_active {
+.pagination__link--active {
   color: #000;
 
   background-color: #fff;
 }
 
-.pagination__link_active:hover,
-.pagination__link_active:focus {
+.pagination__link--active:hover,
+.pagination__link--active:focus {
   color: #000;
 
   background-color: #fff;
