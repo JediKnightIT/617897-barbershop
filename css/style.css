@@ -457,8 +457,9 @@ img {
 }
 
 .catalog-wrapper {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
 }
 
 .filter {
@@ -657,7 +658,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 44px;
   padding: 0;
 
   list-style: none;
