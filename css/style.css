@@ -917,19 +917,14 @@ img {
 .modal {
   position: fixed;
   left: 50%;
-
-  width: 300px;
-  padding: 50px 80px;
-
-  transform: translateX(-50%);
-}
-
-.modal__title {
-  margin-bottom: 20px;
 }
 
 .authorization {
   top: 120px;
+
+  display: none;
+  width: 300px;
+  padding: 50px 80px;
 
   color: #000;
 
@@ -939,6 +934,12 @@ img {
   background-repeat: repeat;
 
   box-shadow: 0px 0px 13px 5px #000;
+
+  transform: translateX(-50%);
+}
+
+.authorization__title {
+  margin-bottom: 20px;
 }
 
 .authorization__text {
@@ -1010,6 +1011,20 @@ img {
   margin-right: 0;
 }
 
+.map {
+  top: 50%;
+
+  display: none;
+  width: 780px;
+  height: 574px;
+
+  border: 7px solid #fff;
+  box-sizing: border-box;
+  box-shadow: 0 5px 80px 10px #000;
+
+  transform: translate(-50%, -50%);
+}
+
 .modal__close {
   position: absolute;
   top: 8px;
@@ -1030,7 +1045,7 @@ img {
   width: 23px;
   height: 5px;
 
-  background-color: #663d15;
+  background-color: #aba9a7;
 
   cursor: pointer;
 }
