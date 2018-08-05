@@ -11,35 +11,39 @@
   </head>
   <body class="inner-page">
     <header class="header">
-      <nav class="nav">
-        <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
-          <img class="header__logo" src="img/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
-        </a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Информация</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Новости</a>
-          </li>
-          <li class="nav__item nav__item--active">
-            <a class="nav__link" href="#">Прайс-лист</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Магазин</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="nav-user">
-          <li class="nav-user__item">
-            <a class="nav-user__link" href="#">Вход</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
+      <header class="header">
+        <nav class="nav container">
+          <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
+            <img class="header__logo" src="img/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Информация</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Новости</a>
+            </li>
+            <li class="nav__item nav__item--active">
+              <a class="nav__link" href="#">Прайс-лист</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="nav-user">
+            <li class="nav-user__item">
+             <svg class="nav-user__icon" width="14" height="14">
+                <use xlink:href="img/sprite.svg#login"></use>
+              </svg>
+              <a class="nav-user__link" href="#">Вход</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <main class="main container">
       <h1 class="common-title">Прайс-лист</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
@@ -118,24 +122,30 @@
       </div>
     </footer>
     <section class="modal authorization">
-      <h2 class="common-title">Личный кабинет</h2>
-      <p class="authorization__text">Введите свой логин и пароль.</p>
+      <h2 class="common-title authorization__title">Личный кабинет</h2>
+      <p class="authorization__text">Введите пожалуйста свой логин и пароль.</p>
       <form class="authorization__form" action="https://echo.htmlacademy.ru" method="POST">
-        <label class="authorization__label">Логин
-          <input class="authorization__form-input authorization__form-input_user-icon" type="text" name="user-login" placeholder="Логин" required>
+        <label class="authorization__label">
+          <input class="authorization__form-input" type="text" name="user-login" placeholder="Логин" required>
+          <svg class="modal__icon" width="13" height="13">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
         </label>
-        <label class="authorization__label">Пароль
-          <input class="authorization__form-input authorization__form-input_password-icon" type="password" name="user-password" placeholder="Пароль" required>
+        <label class="authorization__label">
+          <input class="authorization__form-input" type="password" name="user-password" placeholder="Пароль" required>
+          <svg class="modal__icon" width="13" height="15">
+            <use xlink:href="img/sprite.svg#lock"></use>
+          </svg>
         </label>
-        <p class="authorization__form-row">
-          <label class="authorization__label">
-            <input class="visually-hidden" type="checkbox" name="remember" checked>
-            Запомните меня
-            <span class="authorization__form-checkbox"></span>
-          </label>
+        <div class="authorization__form-container">
+          <p class="authorization__form-row">
+            <input class="visually-hidden filter__input" type="checkbox" name="remember" id="remember" checked>
+            <label class="filter__label filter__label--checkbox modal__label" for="remember">Запомните меня</label>
+            <span class="checkbox-indicator"></span>
+          </p>
           <a class="authorization__form-link" href="#">Я забыл пароль!</a>
-        </p>
-        <button class="button button_authorization" type="submit">Войти</button>
+        </div>
+        <button class="button authorization__button" type="submit">Войти</button>
       </form>
       <button class="modal__close" type="button" aria-label="Кнопка закрытия модального окна авторизации"></button>
     </section>

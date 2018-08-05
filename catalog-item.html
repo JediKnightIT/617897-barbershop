@@ -142,24 +142,30 @@
       </div>
     </footer>
     <section class="modal authorization">
-      <h2 class="common-title">Личный кабинет</h2>
-      <p class="authorization__text">Введите свой логин и пароль.</p>
+      <h2 class="common-title authorization__title">Личный кабинет</h2>
+      <p class="authorization__text">Введите пожалуйста свой логин и пароль.</p>
       <form class="authorization__form" action="https://echo.htmlacademy.ru" method="POST">
-        <label class="authorization__label">Логин
-          <input class="authorization__form-input authorization__form-input_user-icon" type="text" name="user-login" placeholder="Логин" required>
+        <label class="authorization__label">
+          <input class="authorization__form-input" type="text" name="user-login" placeholder="Логин" required>
+          <svg class="modal__icon" width="13" height="13">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
         </label>
-        <label class="authorization__label">Пароль
-          <input class="authorization__form-input authorization__form-input_password-icon" type="password" name="user-password" placeholder="Пароль" required>
+        <label class="authorization__label">
+          <input class="authorization__form-input" type="password" name="user-password" placeholder="Пароль" required>
+          <svg class="modal__icon" width="13" height="15">
+            <use xlink:href="img/sprite.svg#lock"></use>
+          </svg>
         </label>
-        <p class="authorization__form-row">
-          <label class="authorization__label">
-            <input class="visually-hidden" type="checkbox" name="remember" checked>
-            Запомните меня
-            <span class="authorization__form-checkbox"></span>
-          </label>
+        <div class="authorization__form-container">
+          <p class="authorization__form-row">
+            <input class="visually-hidden filter__input" type="checkbox" name="remember" id="remember" checked>
+            <label class="filter__label filter__label--checkbox modal__label" for="remember">Запомните меня</label>
+            <span class="checkbox-indicator"></span>
+          </p>
           <a class="authorization__form-link" href="#">Я забыл пароль!</a>
-        </p>
-        <button class="button button_authorization" type="submit">Войти</button>
+        </div>
+        <button class="button authorization__button" type="submit">Войти</button>
       </form>
       <button class="modal__close" type="button" aria-label="Кнопка закрытия модального окна авторизации"></button>
     </section>
