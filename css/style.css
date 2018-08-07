@@ -30,7 +30,6 @@ body {
 
   background-color: #000;
   background-image: url("../img/index/main-bcg.jpg");
-  background-position: top center;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -45,9 +44,7 @@ img {
 
 .inner-page {
   background-color: #f8f5f2;
-  background-image:
-    linear-gradient(to bottom, #000, transparent),
-    url("../img/index/container-bcg.jpg");
+  background-image: linear-gradient(to bottom, #000, transparent), url("../img/index/container-bcg.jpg");
   background-size: 10px 40px, auto;
   background-position: 0 0;
   background-repeat: repeat-x, repeat;
@@ -99,6 +96,23 @@ img {
   list-style: none;
 }
 
+.nav__item {
+  position: relative;
+}
+
+.nav__item--active::after {
+  content: "";
+
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+
+  height: 5px;
+
+  background-color: #fff;
+}
+
 .nav__link,
 .nav-user__link {
   display: inline-block;
@@ -141,8 +155,9 @@ img {
 
 /* ===== Стилизация хэдера на внутренних страницах===== */
 .inner-page .header {
-  background-color: #000;
   margin-bottom: 50px;
+
+  background-color: #000;
 }
 
 .inner-page .nav {
@@ -225,9 +240,7 @@ img {
   color: #000;
 
   background-color: #f8f5f2;
-  background-image:
-    url("../img/index/line.png"),
-    url("../img/index/container-bcg.jpg");
+  background-image: url("../img/index/line.png"), url("../img/index/container-bcg.jpg");
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
 }
@@ -712,7 +725,7 @@ img {
   background-color: #fff;
 }
 
-/* ===== Стилизация карточки товара ===== */
+/* ===== Стилизация страницы catalog-item ===== */
 .product-photo {
   flex-basis: 460px;
 }
@@ -750,6 +763,7 @@ img {
 
 .product-info__code {
   padding-right: 12px;
+
   color: #aeaeae;
 }
 
@@ -795,28 +809,145 @@ img {
   width: 7px;
   height: 7px;
 
+  background-color: #000;
+
   transform: rotate(45deg);
+}
+
+/* ===== Стилизация страницы price ===== */
+.title {
+  margin-bottom: 15px;
+}
+
+.price .price__title {
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 65px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.price .price__title::before,
+.price .price__title::after {
+  content: "";
+
+  flex-grow: 1;
+  width: 50px;
+  height: 2px;
 
   background-color: #000;
 }
 
-/* ===== Стилизация страницы price ===== */
-.about h2 {
+.price .price__title::before {
+  margin-right: 25px;
+}
+
+.price .price__title::after {
+  margin-left: 25px;
+}
+
+.price__columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+.price__columns-left,
+.price__columns-right {
+  flex-basis: 460px;
+}
+
+.price__columns-left :first-child,
+.price__columns-right :first-child {
+  margin-top: 0;
+}
+
+.price__columns-left :last-child,
+.price__columns-right :last-child {
+  margin-top: 0;
+}
+
+.price__columns > h2:first-child {
+  width: 100%;
+  margin-top: 0;
+}
+
+.price h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
   font-size: 24px;
   line-height: 30px;
 }
 
-.about .about__title {
-  font-size: 48px;
-  line-height: 48px;
+.price h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 24px;
 }
 
-.about table {
+.price h2 + h3 {
+  margin-top: 30px;
+}
+
+.price__list {
+  margin: 14px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.price__list li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.price__list li::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+
+  transform: rotate(45deg);
+}
+
+.price table {
   border-collapse: collapse;
 }
 
-.about td {
+.price__table {
+  width: 100%;
+}
+
+.price__table td {
+  width: 50%;
+}
+
+.price__table td:last-child {
+  text-align: center;
+}
+
+.price td {
+  padding: 10px 15px;
   border: 2px solid #000;
+}
+
+.price p {
+  margin: 14px 0;
 }
 
 /* ===== Стилизация футера ===== */
@@ -958,7 +1089,6 @@ img {
   width: 300px;
   padding: 6px 20px;
   padding-right: 40px;
-
   box-sizing: border-box;
 
   font: inherit;
@@ -1017,9 +1147,9 @@ img {
   display: none;
   width: 780px;
   height: 574px;
+  box-sizing: border-box;
 
   border: 7px solid #fff;
-  box-sizing: border-box;
   box-shadow: 0 5px 80px 10px #000;
 
   transform: translate(-50%, -50%);

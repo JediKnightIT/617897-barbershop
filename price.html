@@ -11,114 +11,127 @@
   </head>
   <body class="inner-page">
     <header class="header">
-      <header class="header">
-        <nav class="nav container">
-          <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
-            <img class="header__logo" src="img/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
-          </a>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">Информация</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Новости</a>
-            </li>
-            <li class="nav__item nav__item--active">
-              <a class="nav__link" href="#">Прайс-лист</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Магазин</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="nav-user">
-            <li class="nav-user__item">
-             <svg class="nav-user__icon" width="14" height="14">
-                <use xlink:href="img/sprite.svg#login"></use>
-              </svg>
-              <a class="nav-user__link" href="#">Вход</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="nav container">
+        <a class="nav__link-logo" href="index.html" aria-label="Ссылка на главную страницу барбершопа Бородинский">
+          <img class="header__logo" src="img/logo-barbershop.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Информация</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Новости</a>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="#">Прайс-лист</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="nav-user">
+          <li class="nav-user__item">
+           <svg class="nav-user__icon" width="14" height="14">
+              <use xlink:href="img/sprite.svg#login"></use>
+            </svg>
+            <a class="nav-user__link" href="#">Вход</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main container">
-      <h1 class="common-title">Прайс-лист</h1>
+      <h1 class="common-title title">Прайс-лист</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs__item breadcrumbs__item--active">Прайс-лист</li>
       </ul>
-      <section class="about">
-        <h2 class="about__title">Истинно мужская классика</h2>
+      <section class="price">
+        <h2 class="price__title">Истинно мужская классика</h2>
       <!-- Для заполнения контента из админки классы не ставим, а стилизуем за каскадом -->
-        <h2>Мы импользуем только лучшие средства:</h2>
-        <ul>
-          <li>Baxter of California</li>
-          <li>Mr Natty</li>
-          <li>Suavecito</li>
-          <li>Malin+Goetz</li>
-        </ul>
-
-        <h2>Цены на услуги наших мастеров:</h2>
-        <table>
-          <tr>
-            <td>Стрижка</td>
-            <td>1500 &#8381;</td>
-          </tr>
-          <tr>
-            <td>Стрижка бороды</td>
-            <td>500 &#8381;</td>
-          </tr>
-          <tr>
-            <td>Накрутка усов</td>
-            <td>350 &#8381;</td>
-          </tr>
-        </table>
-
-        <h2>Несколько слов о нас:</h2>
-        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        <div class="price__columns">
+          <div class="price__columns-left">
+            <h2>Мы импользуем только лучшие средства:</h2>
+            <ul class="price__list">
+              <li>Baxter of California</li>
+              <li>Mr Natty</li>
+              <li>Suavecito</li>
+              <li>Malin+Goetz</li>
+            </ul>
+          </div>
+          <div class="price__columns-right">
+            <h2>Цены на услуги наших мастеров:</h2>
+            <table class="price__table">
+              <tr>
+                <td>Стрижка</td>
+                <td>1500 &#8381;</td>
+              </tr>
+              <tr>
+                <td>Стрижка бороды</td>
+                <td>500 &#8381;</td>
+              </tr>
+              <tr>
+                <td>Накрутка усов</td>
+                <td>350 &#8381;</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="price__columns">
+          <h2>Несколько слов о нас:</h2>
+          <div class="price__columns-left">
+            <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+          </div>
+          <div class="price__columns-right">
+            <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a class="footer__link" href="#">Как нас найти?</a><br>
-        Телефон: +7 (812) 666-02-66
-      </p>
-      <div class="socials">
-        <p class="socials__text">Давайте дружить!</p>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Вконтакте">
-              <svg class="social__icon" width="28" height="15">
-                <use xlink:href="img/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Фейсбук">
-              <svg class="social__icon" width="12" height="22">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Инстаграм">
-              <svg class="social__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <p class="footer__textt">Разработано:</p>
-        <a class="button footer__copyright-link" href="#">Html Academy</a>
+      <div class="container">
+        <div class="footer__wrapper">
+          <p class="address">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <a class="footer__link" href="#">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+          </p>
+          <div class="socials">
+            <p class="socials__text">Давайте дружить!</p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Вконтакте">
+                  <svg class="social__icon" width="28" height="15">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Фейсбук">
+                  <svg class="social__icon" width="12" height="22">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" aria-label="Инстаграм">
+                  <svg class="social__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p class="footer__text">Разработано:</p>
+            <a class="button copyright__link" href="#">Html Academy</a>
+          </div>
+        </div>
       </div>
     </footer>
     <section class="modal authorization">
@@ -156,3 +169,4 @@
     </section>
   </body>
 </html>
+
