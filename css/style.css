@@ -1308,6 +1308,9 @@ img {
   top: 8px;
   right: -33px;
 
+  width: 20px;
+  height: 22px;
+
   background-color: transparent;
   border: none;
 }
@@ -1338,4 +1341,117 @@ img {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.show {
+  display: block;
+
+  -webkit-animation-name: show;
+
+          animation-name: show;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+.error {
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: translate(-50%, -2000px);
+            transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+
+@keyframes show {
+  0% {
+    -webkit-transform: translate(-50%, -2000px);
+            transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@-webkit-keyframes error {
+  0%,
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+}
+
+@keyframes error {
+  0%,
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
 }
