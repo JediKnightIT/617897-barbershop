@@ -1418,16 +1418,16 @@ img {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
+    -webkit-transform: translateX(-52%);
+            transform: translateX(-52%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(-40px);
-            transform: translateX(-40px);
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
   }
 }
 
@@ -1443,15 +1443,15 @@ img {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
+    -webkit-transform: translateX(-52%);
+            transform: translateX(-52%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(-40px);
-            transform: translateX(-40px);
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
   }
 }
