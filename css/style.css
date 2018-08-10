@@ -45,8 +45,6 @@ img {
 .inner-page {
   background-color: #f8f5f2;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(transparent)), url("../img/index/container-bcg.jpg");
-  background-image: -webkit-linear-gradient(top, #000, transparent), url("../img/index/container-bcg.jpg");
-  background-image: -o-linear-gradient(top, #000, transparent), url("../img/index/container-bcg.jpg");
   background-image: linear-gradient(to bottom, #000, transparent), url("../img/index/container-bcg.jpg");
   background-size: 10px 40px, auto;
   background-position: 0 0;
@@ -250,7 +248,6 @@ img {
   background-color: #fff;
 
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -517,7 +514,6 @@ img {
   background-color: #000;
 
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -601,13 +597,11 @@ img {
 
 .filter__input:checked + .filter__label--checkbox::before {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .filter__input:checked + .filter__label--checkbox::after {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -914,7 +908,6 @@ img {
   background-color: #000;
 
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -1039,7 +1032,6 @@ img {
   background-color: #000;
 
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -1204,7 +1196,6 @@ img {
           box-shadow: 0px 0px 13px 5px #000;
 
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
@@ -1299,8 +1290,21 @@ img {
           box-shadow: 0 5px 80px 10px #000;
 
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.map__iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.map__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .modal__close {
@@ -1333,13 +1337,11 @@ img {
 
 .modal__close::before {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .modal__close::after {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
