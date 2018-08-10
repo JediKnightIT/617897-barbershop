@@ -5,8 +5,12 @@
 
   var link = document.querySelector('.nav-user__link');
   var authorizationPopup = document.querySelector('.authorization');
-  var login = document.querySelector('[name=user-login]');
-  var modalClose = document.querySelector('.modal__close');
+  var login = authorizationPopup.querySelector('[name=user-login]');
+  var authorizationClose = authorizationPopup.querySelector('.modal__close');
+
+  var mapLink = document.querySelector('.map-link');
+  var mapPopup = document.querySelector('.map');
+  var mapClose = mapPopup.querySelector('.modal__close');
 
   var escPressHandler = function (evt) {
     if (evt.keyCode === escCode) {
@@ -15,17 +19,37 @@
     }
   };
 
+  var escPressMapHandler = function (evt) {
+    if (evt.keyCode === escCode) {
+      if (mapPopup.classList.contains('show')) {
+        mapPopup.classList.remove('show');
+      }
+    }
+  };
+
   link.addEventListener('click', function (evt) {
     evt.preventDefault();
     authorizationPopup.classList.add('show');
     login.focus();
 
-    document.addEventListener('keydown', escPressHandler);
+    window.addEventListener('keydown', escPressHandler);
   });
 
-  modalClose.addEventListener('click', function (evt) {
+  authorizationClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     authorizationPopup.classList.remove('show');
     authorizationPopup.classList.remove('error');
+  });
+
+  mapLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add('show');
+
+    window.addEventListener('keydown', escPressMapHandler);
+  });
+
+  mapClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove('show');
   });
 })();
